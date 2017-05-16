@@ -77,13 +77,13 @@ public class Model {
 								flag2=true;
 							
 							}else{
-								System.out.println("SONO UGUALI"+vet[f]+" "+doppie.get(""+vet[f])+" "+doppie1.get(""+vet[f]));
+								//System.out.println("SONO UGUALI"+vet[f]+" "+doppie.get(""+vet[f])+" "+doppie1.get(""+vet[f]));
 
 							}
 							
 						}
 						if(flag2==false){
-							System.out.println(s);
+							//System.out.println(s);
 							lista.add(s);
 							
 						}else{

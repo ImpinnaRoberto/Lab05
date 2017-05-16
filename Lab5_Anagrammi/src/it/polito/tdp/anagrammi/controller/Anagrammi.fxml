@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.anagrammi.controller.AnagrammiController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.anagrammi.controller.AnagrammiController">
    <top>
       <Label text="Lab5_Anagrammi" BorderPane.alignment="CENTER" />
    </top>
@@ -19,7 +18,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="txtInserimento" prefHeight="25.0" prefWidth="210.0" promptText="Inserisci parola...">
+                  <TextField fx:id="txtInserimento" prefHeight="25.0" prefWidth="189.0" promptText="Inserisci parola...">
                      <HBox.margin>
                         <Insets right="18.0" />
                      </HBox.margin>
@@ -33,23 +32,23 @@
             </HBox>
             <Label text="Anagrammi corretti">
                <VBox.margin>
-                  <Insets bottom="15.0" right="255.0" />
+                  <Insets bottom="15.0" right="235.0" />
                </VBox.margin>
             </Label>
-            <TextArea fx:id="txtResultEsatti" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="116.0" prefWidth="363.0" />
+            <TextArea fx:id="txtResultEsatti" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="340.0" />
             <Label text="Anagrammi errati">
                <VBox.margin>
-                  <Insets bottom="15.0" right="270.0" top="20.0" />
+                  <Insets bottom="15.0" right="245.0" top="20.0" />
                </VBox.margin>
             </Label>
-            <TextArea fx:id="txtResultErrati" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="123.0" prefWidth="360.0" />
+            <TextArea fx:id="txtResultErrati" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="78.0" prefWidth="338.0" />
          </children>
       </VBox>
    </center>
    <bottom>
       <Button fx:id="btnReset" mnemonicParsing="false" onAction="#doReset" text="Reset" BorderPane.alignment="CENTER">
          <BorderPane.margin>
-            <Insets bottom="20.0" right="320.0" />
+            <Insets bottom="20.0" right="293.0" top="15.0" />
          </BorderPane.margin>
       </Button>
    </bottom>

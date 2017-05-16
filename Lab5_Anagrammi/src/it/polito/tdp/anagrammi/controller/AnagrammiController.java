@@ -5,8 +5,10 @@
 package it.polito.tdp.anagrammi.controller;
 
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.ResourceBundle;
 
+import it.polito.tdo.anagrammi.dao.*;
 import it.polito.tdp.anagrammi.model.Model;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -40,12 +42,24 @@ public class AnagrammiController {
 
     @FXML
     void doCalcola(ActionEvent event) {
-    	txtResultEsatti.appendText(model.calcola(txtInserimento.getText()).toString());
+    	txtResultEsatti.clear();
+    	txtResultErrati.clear();
+    	AnagrammaDAO a= new AnagrammaDAO();
+    	LinkedList<String> elenco=model.calcola(txtInserimento.getText());
+    	
+    	for(String s: elenco){
+    		if(a.isCorrect(s)){
+    			txtResultEsatti.appendText(s+"\n");
+    		}else{
+    			txtResultErrati.appendText(s+"\n");
+    		}
+    	}
     }
 
     @FXML
     void doReset(ActionEvent event) {
-
+    	txtResultEsatti.clear();
+    	txtResultErrati.clear();
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
