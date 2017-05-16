@@ -44,7 +44,7 @@ public class AnagrammiController {
     void doCalcola(ActionEvent event) {
     	txtResultEsatti.clear();
     	txtResultErrati.clear();
-    	AnagrammaDAO a= new AnagrammaDAO();
+    	AnagrammaDAO a=new AnagrammaDAO();
     	LinkedList<String> elenco=model.calcola(txtInserimento.getText());
     	
     	for(String s: elenco){
